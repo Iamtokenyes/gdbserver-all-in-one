@@ -11,7 +11,7 @@ sudo apt-get install -y\
  libexpat1-dev\
  libgmp-dev libgmp-ocaml-dev libgmp10\
  libgmp10-doc libgmp3-dev libgmpada7\
- libgmpada9-dev libgmpxx4ldbl\
+ libgmpada-dev libgmpxx4ldbl\
  bison\
  autoconf\
  texinfo\
