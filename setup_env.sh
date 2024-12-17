@@ -7,11 +7,6 @@ sudo apt-get install -y\
  patch\
  make\
  gawk\
- libgetopt-argvfile-perl\
- libexpat1-dev\
- libgmp-dev libgmp-ocaml-dev libgmp10\
- libgmp10-doc libgmp3-dev libgmpada\
- libgmpada-dev libgmpxx4ldbl\
  bison\
  autoconf\
  texinfo\
