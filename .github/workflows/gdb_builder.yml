@@ -45,10 +45,15 @@ jobs:
         run: |
           sudo chmod +x ./builder.sh && sudo ./builder.sh $GDB_VERSION riscv64
 
-      - name: Upload artifact
+      - name: Upload artifactv3
         uses: actions/upload-artifact@v3
         with:
           name: my-artifact
+          path: /releases/*
+      - name: Upload artifactv4
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-artifactv4
           path: /releases/*
 
       # - uses: shaowenchen/debugger-action@v1
