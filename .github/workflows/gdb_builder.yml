@@ -2,7 +2,7 @@ name: gdbserver builder
 
 on:
   schedule:
-    - cron: '0 18 * * *'
+    - cron: '1 18 * * *'
   push:
     branches: [ main ]
     # Publish semver tags as releases.
