@@ -8,7 +8,7 @@ echo "Start build buildroot"
 cd buildroot
 make clean
 cp ../config/${TARGETARCH}-config .config
-make
+make -j16
 export PATH=`pwd`/output/host/bin:$PATH
 tar -zcvf ${TARGETARCH}-linux-buildroot.tar.gz output/host/*
 cp ${TARGETARCH}-linux-buildroot.tar.gz /releases/
