@@ -29,27 +29,7 @@ jobs:
         run: |
           sudo chmod +x ./builder.sh && sudo ./builder.sh $GDB_VERSION arm
 
-      - name: aarch64 cross building
-        run: |
-          sudo chmod +x ./builder.sh && sudo ./builder.sh $GDB_VERSION aarch64
 
-      - name: mips cross building
-        run: |
-          sudo chmod +x ./builder.sh && sudo ./builder.sh $GDB_VERSION mips
-
-      - name: mips64 cross building
-        run: |
-          sudo chmod +x ./builder.sh && sudo ./builder.sh $GDB_VERSION mips64
-
-      - name: riscv64 cross building
-        run: |
-          sudo chmod +x ./builder.sh && sudo ./builder.sh $GDB_VERSION riscv64
-
-      - name: Upload artifactv3
-        uses: actions/upload-artifact@v3
-        with:
-          name: my-artifact
-          path: /releases/*
       - name: Upload artifactv4
         uses: actions/upload-artifact@v4
         with:
